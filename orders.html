@@ -8,17 +8,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-<link rel="stylesheet" type="text/css" href="product.css">
+    <link rel="stylesheet" type="text/css" href="orders.css">
 
-    <title>Product page</title>
+    <title>My orders/wishlists</title>
   </head>
   <body>
     
 <div class="container-fluid">
-  
-  
-  
-   <nav class="navbar navbar-light success-color" style="background: linear-gradient(to top left, #00ff00 0%, #ffffff 100%);">
+
+
+     <nav class="navbar navbar-light success-color" style="background: linear-gradient(to top left, #00ff00 0%, #ffffff 100%);">
   
 
          <p class="col-md-3 d-none d-md-block">telephone:+37494572314</p>
@@ -39,7 +38,7 @@
           <option>€</option>
         </select>
         
-        <button type="button" class="btn btn-primary col-md-2 d-none d-md-block ">
+        <button type="button" class="btn btn-primary col-md-2 d-none d-md-block " href="orders.html">
   Wishlist <span class="badge badge-danger">3</span>
 </button>
       </nav>
@@ -54,9 +53,6 @@
       <input class="form-control mr-sm-2 d-none d-md-block" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0 col-md-3 d-none d-md-block" type="submit">Search</button>
     </form>
-        
-        
-        
   
     
     <div class="dropdown">
@@ -76,12 +72,14 @@
 </nav>
   
   
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
+  
+    
   <div class="collapse navbar-collapse " id="navbarSupportedContent">
     <ul class="navbar-nav  ">
       
@@ -184,109 +182,317 @@
       
                               
   </div>
+        
 </nav>
-    
-    
-    
-    
-   
-    	<div class="row">
-        <div class="btn-group btn-breadcrumb  col-lg-6 mt-2">
-            <a href="#" class="btn btn-warning"><i class="glyphicon glyphicon-home"></i></a>
-            <a href="#" class="btn btn-warning">Computers</a>
-            <a href="#" class="btn btn-warning">Notebooks</a>
-            <a href="#" class="btn btn-warning active">Gaming</a>
-        </div>
 
-    
-       <form class="ml-3">
-  <div class="form-row align-items-center">
-    <div class="col-auto my-1">
-      <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-        <option selected>Choose...</option>
-        <option value="1">Asus</option>
-        <option value="2">Dell</option>
-        <option value="3">Acer</option>
-        <option value="3">HP</option>
-        <option value="3">MSI</option>
-      </select>
-    </div>
-    <div class="col-auto my-1">
-      <div class="custom-control custom-checkbox mr-sm-2">
-        <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-        <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Login</button>
       </div>
     </div>
-    <div class="col-auto my-1">
-      <button type="submit" class="btn btn-warning">Submit</button>
+  </div>
+</div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="registModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">reply Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">save</label>
+  </div>
+  
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Register</button>
+      </div>
     </div>
   </div>
-</form>
-        
-    </div>
+</div>
+
+
+
+
+<a href="orders.html"><button type="button" class="btn btn-success mt-2 mb-3 mr-3">My Account</button></a>
+<a href="info.html"><button type="button" class="btn btn-outline-success mt-2 mb-3">My Info</button></a>
+
+
+<h2 class="mt-2">My Orders</h2>
+
+<div class="col-12">
   
-  
-  <h1 class="mt-4 mb-3">
-
-MSI GL65 9SC</h1>
-    
-    
-<div class="container-fluid">
-
-<div class="row">
-  
-
-
-
-<div class="col-6">
-  
-<div class="row">
-
-<div class="row">
-  
-<img src="https://www.teckknow.com/wp-content/uploads/2018/01/MSI-GE63-Raider-RGB.jpg" alt="" width="100px" class="ml-3 d-none d-sm-block">
+<table class="table table-hover bg-light">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Order</th>
+      <th scope="col">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Tigran</td>
+      <td>iPhone X</td>
+      <td>500$</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Tigran</td>
+      <td>MSI GL65 9SC</td>
+      <td>1999$</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Tigran</td>
+      <td>149$</td>
       
-       <img src="https://cdn1.smartprix.com/rx-itATgxbXT-w1200-h1200/msi-gl65-9sdk-214in.jpg" alt="" width="100px" class="d-none d-sm-block">
       
-       <img src="https://cdn11.bigcommerce.com/s-hvhcbznkl4/images/stencil/2000x2000/products/7791/52460/apijuavvi__56644.1564677219.jpg?c=2" alt="" width="100px"  class="d-none d-sm-block">
 
-        <img src="https://specials-images.forbesimg.com/imageserve/5d2c5bf834a5c400084b5aa3/960x0.jpg?cropX1=6&cropX2=959&cropY1=85&cropY2=852" alt="" width="100px"  class="d-none d-md-block">
-
+    </tr>
+  </tbody>
+</table>
 
 </div>
+
+
+
+<div class="row">
+
+<h2 class="col-4">Wishlists</h2>
+<h2 class="ml-3 d-none d-lg-block">Recent Activity</h2>
+</div>
+
+
+
+<div class="row">
+
+
+
+
+
+
+
+  
+<div class="col-12 col-lg-4">
+  
+<table class="table table-hover bg-light">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Photo</th>
+      <th scope="col">Name</th>
+      <th scope="col">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td><img src="https://freephonestores.com/wp-content/uploads/2018/02/iPhone-X-black.png" style="width: 50px"></td>
+      <td>iPhone X</td>
+      <td>500$</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td><img src="https://asset.msi.com/resize/image/global/product/product_6_20190719151113_5d316d1179629.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png" style="width: 60px"></td>
+      <td>MSI GL65 9SC</td>
+      <td>1999$</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2"><img src="https://i01.appmifile.com/webfile/globalimg/products/m/redmi-7/red.png" style="width: 50px"></td>
+      <td>149$</td>
+      
+      
+
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+
+
+<h2 class="col-12 d-block d-lg-none d-flex justify-content-center">Recent Activity</h2>
+
+
+
+<div class="col-8 mt-3 ">
+  
+ <div class="card mb-3  col-6 col-lg-12" style="max-width: 700px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <a href="product.html"><img src="https://i.pcmag.com/imagery/reviews/064BLrx1BpWWnDpMpmpSpYf-1..v_1575595293.jpg" class="card-img" alt="..."></a>
+    </div>
+    <div class="col-md-4" style="border: 3px;">
+      <div class="card-body">
+        <h5 class="card-title">
+
+MSI GL65 9SC</h5>
+        <p class="card-text">Playing your favorite PC games with the detail levels and resolution maxed out  </p>
+        
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h2 align="center" class="mt-3">1999$</h2>
+      <button type="button" class="btn btn-primary" style="margin-left: 65px; margin-top: 50px;">Add to cart</button>
+
+    </div>
+  </div>
+</div>
+
+
+ <div class="card mb-3  col-4 " style="max-width: 700px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <a href="product.html"><img src="https://i.pcmag.com/imagery/reviews/064BLrx1BpWWnDpMpmpSpYf-1..v_1575595293.jpg" class="card-img" alt="..."></a>
+    </div>
+    <div class="col-md-4" style="border: 3px;">
+      <div class="card-body">
+        <h5 class="card-title">
+
+MSI GL65 9SC</h5>
+        <p class="card-text">Playing your favorite PC games with the detail levels and resolution maxed out  </p>
+        
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h2 align="center" class="mt-3">1999$</h2>
+      <button type="button" class="btn btn-primary" style="margin-left: 65px; margin-top: 50px;">Add to cart</button>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="card mb-3  col-4 " style="max-width: 700px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <a href="product.html"><img src="https://i.pcmag.com/imagery/reviews/064BLrx1BpWWnDpMpmpSpYf-1..v_1575595293.jpg" class="card-img" alt="..."></a>
+    </div>
+    <div class="col-md-4" style="border: 3px;">
+      <div class="card-body">
+        <h5 class="card-title">
+
+MSI GL65 9SC</h5>
+        <p class="card-text">Playing your favorite PC games with the detail levels and resolution maxed out  </p>
+        
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h2 align="center" class="mt-3">1999$</h2>
+      <button type="button" class="btn btn-primary" style="margin-left: 65px; margin-top: 50px;">Add to cart</button>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="card mb-3  col-4 " style="max-width: 700px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <a href="product.html"><img src="https://i.pcmag.com/imagery/reviews/064BLrx1BpWWnDpMpmpSpYf-1..v_1575595293.jpg" class="card-img" alt="..."></a>
+    </div>
+    <div class="col-md-4" style="border: 3px;">
+      <div class="card-body">
+        <h5 class="card-title">
+
+MSI GL65 9SC</h5>
+        <p class="card-text">Playing your favorite PC games with the detail levels and resolution maxed out  </p>
+        
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h2 align="center" class="mt-3">1999$</h2>
+      <button type="button" class="btn btn-primary" style="margin-left: 65px; margin-top: 50px;">Add to cart</button>
+
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
 
 
 <div>
-<img src="https://i.pcmag.com/imagery/reviews/064BLrx1BpWWnDpMpmpSpYf-1..v_1575595293.jpg" alt="" width="420" class="img-fluid mt-2">
-</div>
-
-</div>
-</div>
-
-
-
-
-
-<div class="col-12 col-sm-5">
   
 
-<h2> 1999$   </h2>
- <div class="mt-3 ">
-        <p>1999$.Playing your favorite PC games with the detail levels and resolution maxed out doesn't mean you have to buy a big desktop rig—today's best gaming laptops pack some serious power. Here's everything you need to know to choose the right gaming-notebook monster, along with our top lab-tested picks.
 
-</p>
-          </div>
 
-          <div class="form-group ">
-    <label for="exampleFormControlSelect1" >Quantity</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
+</div>
+
+
+
+
+
+
 
 
 
@@ -294,95 +500,13 @@ MSI GL65 9SC</h1>
 </div>
 
 
- <div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-  <label class="form-check-label" for="exampleRadios1">
-    Black
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-  <label class="form-check-label" for="exampleRadios2">
-   White
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
-  <label class="form-check-label" for="exampleRadios3">
-    Red
-  </label>
-</div>
-
-<button type="button" class="btn btn-primary mt-3">Add to cart</button>
-
-</div>
 
 
 
-</div>
-
-</div>
 
 
 
-    
-    <div class="col-12 mt-3">
-    <h4>Key Features</h4>
-    </div>
-
-    <ul>
-      <li>Laptop Intel i5-9300H 2.4GHz</li>
-      <li>4GB - 8GB Ram</li>
-      <li>1TB HDD/128GB SSD</li>
-      <li>Windows 10</li>
-    </ul>
-    
-     
-<div class="col-12">
-    <h4 align="center">You may also like</h4>
-   </div> 
-    
-    <div class="card-group">
-  <div class="card">
-    <a href=""><img src="https://images.anandtech.com/doci/13608/Acer-Nitro-5-AN515-54_575px.png" class="card-img-top" alt="..."></a>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <a href=""><img src="https://cdn.vox-cdn.com/thumbor/5GBOwzIf8zqWeI362vGQEvQg3nM=/0x0:2040x1360/1200x800/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/66591598/gigabyteaorus17x.0.jpg" class="card-img-top" alt="..."></a>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <a href=""><img src="https://media.4rgos.it/i/Argos/3039061_R_Z001A?w=750&h=440&qlt=70" class="card-img-top" alt="..."></a>
-    <div class="card-body">
-      <h5 class="card-title">Product 1</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-</div>
-    
-    
-    <nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center mt-3">
-    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-  </ul>
-</nav>
-    
-    
-    
-    <div class="d-flex justify-content-center flex-lg-row  flex-column bd-highligh">
+<div class="d-flex justify-content-center flex-lg-row  flex-column bd-highligh">
         <a class="text-center flex-fill py-3 px-lg-5 border bg-light text-uppercase font-weight-bold text-secondary text-decoration-none" href="#">contact us</a>
         <a class="text-center flex-fill py-3 px-lg-5 border bg-light text-uppercase font-weight-bold text-secondary text-decoration-none" href="#">live Chat</a>
         <a class="text-center flex-fill py-3 px-lg-5 border bg-light text-uppercase font-weight-bold text-secondary text-decoration-none" href="#">shipping</a>
@@ -433,98 +557,20 @@ MSI GL65 9SC</h1>
 
 </footer>
 <!-- Footer -->
-    
-    
 
 
 
-<!-- Modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-       <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  
-</form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Login</button>
-      </div>
-    </div>
-  </div>
+
+
+
+
+
+
+
+
+
 </div>
 
-
-
-
- <div class="modal fade" id="registModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">reply Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">save</label>
-  </div>
-  
-</form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Register</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-    
-    
-    </div>
-    
-    </div>
-    
-    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
