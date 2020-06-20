@@ -1,0 +1,30 @@
+body {
+  background-image: url("https://i.pinimg.com/originals/ef/9d/1a/ef9d1a5386d76e1a202034b3c1e92117.png")
+    
+}
+
+
+@import "compass/css3";
+
+.dl-small {
+  margin-bottom: 4px;
+}
+
+body {
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 800px;
+}
+
+.form-control {
+  width: auto;
+}
+
+.form-control-small {
+  width: 100px;
+}
+
+.form-control-large {
+  width: 310px;
+}
+
